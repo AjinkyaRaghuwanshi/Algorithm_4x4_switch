@@ -121,7 +121,7 @@ $module [ ##OUTPUTPORTDAEMON ]
 				//  (being sent out)
 				//
 				$phi active_packet :=
-					ZERO_2 $on $entry next_active_packet $on $loopback
+					ZERO_3 $on $entry next_active_packet $on $loopback
 
 			////////////////////////////////////////////////////////////////////////////////////////////////////////Have to edit from here just now at 10 Nov 0:55..........
 
@@ -207,7 +207,7 @@ $module [ ##OUTPUTPORTDAEMON ]
 			$volatile $call prioritySelect
 						 (down_counter active_packet pkt_1_has_priority pkt_2_has_priority pkt_3_has_priority pkt_4_has_priority p1_valid p2_valid p3_valid p4_valid)
 							(next_active_packet next_pkt_1_has_priority next_pkt_2_has_priority next_pkt_3_has_priority next_pkt_4_has_priority)
-			/////////////////////////////////////////////////////////////////////////////////// Above till here........... 
+			/////////////////////////////////////////////////////////////////////////////////// Above till here...........
 
 
 			//
@@ -288,4 +288,3 @@ $module [ ##OUTPUTPORTDAEMON ]
 		$while 1
 	}
 }
-
